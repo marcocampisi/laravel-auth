@@ -1,13 +1,11 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Elenco dei Progetti') }}
+            {{ __('Crea Progetto') }}
         </h2>
     </x-slot>
 
     <div class="container mx-auto p-6">
-        <h1 class="text-3xl font-semibold mb-6">Creazione di un nuovo Progetto</h1>
-    
         <form method="POST" action="{{ route('projects.store') }}">
             @csrf
     
