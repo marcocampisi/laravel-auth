@@ -17,22 +17,20 @@
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="font-semibold text-black hover:drop-shadow-md focus:outline focus:outline-2 focus:rounded-sm focus:outline-white">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
+                        <a href="{{ route('login') }}" class="font-semibold text-black hover:drop-shadow-md focus:outline focus:outline-2 focus:rounded-sm focus:outline-white">Log in</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-black hover:drop-shadow-md focus:outline focus:outline-2 focus:rounded-sm focus:outline-white">Register</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
             <div class="text-center">
-                <!-- Aggiungi i tuoi contenuti personali qui -->
-                <h1 class="text-5xl sm:text-9xl font-mono font-extrabold text-white drop-shadow-lg hover:scale-110 transition cursor-default">Benvenuto!</h1>
+                <h1 class="text-5xl sm:text-9xl font-mono font-extrabold text-gray-900 drop-shadow-xl hover:scale-110 transition cursor-default">Benvenuto!</h1>
                 <p class="mt-4 text-lg text-black">Sei nella pagina principale.</p>
-                <!-- Aggiungi ulteriori sezioni o contenuti qui -->
             </div>
         </div>
     </body>
