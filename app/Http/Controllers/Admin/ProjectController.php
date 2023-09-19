@@ -70,7 +70,20 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
-        return redirect()->route('projects.show', $project);
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'date' => 'required|date'
+        ]);
+    
+        $project->update([
+            'title' => $request->input('title'),
+            'description' => $request->input('description'),
+            'date' => $request->input('date')
+        ]);
+    
+        return redirect()->route('projects.show', ['project' => $project])
+            ->with('success', 'Progetto aggiornato con successo!');
     }
 
     /**
