@@ -17,6 +17,7 @@
                         <div class="bg-gray-100 p-4 border-t border-gray-200 flex">
                             <a href="{{ route('projects.show', ['project' => $project]) }}" class="text-blue-500 hover:underline">Dettagli</a>
                             <div class="ml-auto">
+                                <a href="{{ route('projects.edit', ['project' => $project]) }}" class="text-blue-500 hover:underline mr-4">Modifica</a>
                                 <form action="{{ route('projects.destroy', ['project' => $project]) }}" method="POST" class="inline">
                                     @csrf
                                     @method('DELETE')
