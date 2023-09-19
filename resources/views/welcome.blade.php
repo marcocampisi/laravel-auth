@@ -30,7 +30,7 @@
 
             <div class="text-center">
                 <h1 class="text-5xl sm:text-9xl font-mono font-extrabold text-gray-900 drop-shadow-xl hover:scale-110 transition cursor-default">Benvenuto!</h1>
-                <p class="mt-4 text-lg text-black">Sei nella pagina principale.</p>
+                <p class="mt-4 text-lg text-black">Sei nella pagina principale, effettua l'accesso.</p>
                 <p class="mt-1 text-lg text-black">Da qui puoi accedere ai progetti.</p>
                 <button class="rounded-lg bg-gray-800 text-white py-2 px-5 mt-6 transition hover:scale-110">
                     <a href="{{ route('projects.index') }}">Progetti</a>
